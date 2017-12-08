@@ -26,8 +26,7 @@ let config = {
         ] 
     },
     plugins: [
-        new ExtractTextWebpackPlugin('style.css'), // Call the extract plugin and name your css file
-        new webpack.optimize.UglifyJsPlugin() // Call the Uglifyjs-webpack-plugin
+        new ExtractTextWebpackPlugin('style.css') // Call the extract plugin and name your css file
     ],
     devServer: {
         contentBase: path.resolve(__dirname, './public'), // The directory to serve HTML content from
@@ -39,3 +38,10 @@ let config = {
 }
 
 module.exports = config;
+
+// NODE_ENV=production setup 
+if (process.env.NODE_ENV === 'production') {
+    module.exports.plugins.push(
+        new webpack.optimize.UglifyJsPlugin() // Call the Uglifyjs-webpack-plugin
+    );
+}
