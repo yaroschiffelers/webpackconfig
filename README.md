@@ -38,13 +38,19 @@ End with an example of getting some data out of the system or using it for a lit
 
 Add additional notes about how to deploy this on a live system
 
+## Got Stuck?
+
+Ckeckout the webpack help page. Run:
+
+```bash
+webpack -help
+```
+
+in your terminal. 
+
 ## Built With
 
 * [webpack](https://webpack.js.org/) - Webpack is a module bundler. 
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
@@ -58,7 +64,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Tutorial on how to setup your own webpack conif [medium](https://codeburst.io/easy-guide-for-webpack-2-0-from-scratch-fe508a3ce44e)
+
 
