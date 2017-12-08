@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-document.write('Ombushakalaka, he!')
+document.write('Ombushakalaka, he!');
 
 /***/ })
 /******/ ]);
