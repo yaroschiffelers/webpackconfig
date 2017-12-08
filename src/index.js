@@ -1,4 +1,4 @@
-require('./style.scss')
+require('./assets/scss/style.scss')
 
 document.write('Ombushakalaka, he! ')
 
@@ -14,4 +14,4 @@ platypus.animalType('platypus')
 
 const hippo = new Animal 
 
-hippo.animalType('hippo')
+hippo.animalType('hippos')
