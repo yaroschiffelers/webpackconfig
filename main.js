@@ -1,3 +1,5 @@
+require('./style.scss')
+
 document.write('Ombushakalaka, he! ')
 
 class Animal {
