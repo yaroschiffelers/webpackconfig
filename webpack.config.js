@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
-const Etwp = require('extract-text-webpack-plugin')
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 let config = {
     entry: './src/index.js',
@@ -17,7 +18,7 @@ let config = {
             },
             {
                 test: /\.scss$/,
-                use: Etwp.extract({
+                use: ExtractTextWebpackPlugin.extract({
                     use: ['css-loader', 'sass-loader'],
                     fallback: 'style-loader'
                 })
@@ -25,7 +26,8 @@ let config = {
         ] 
     },
     plugins: [
-        new Etwp('style.css') // Call the extract plugin and name your css file
+        new ExtractTextWebpackPlugin('style.css'), // Call the extract plugin and name your css file
+        new webpack.optimize.UglifyJsPlugin() // Call the Uglyjs (uglifyjs-webpack) plugin
     ],
     devServer: {
         contentBase: path.resolve(__dirname, './public'), // The directory to serve HTML content from
