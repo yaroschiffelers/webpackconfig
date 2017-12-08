@@ -20,19 +20,33 @@ npm i -g webpack@latest
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+Clone this repository: 
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```bash
+git clone git@github.com:yaroschiffelers/webpackconfig.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Cd to the project folder:
+
+```bash
+cd webpackconfig
+```
+
+Run Yarn install:
+
+```bash
+yarn install
+```
+
+To start Webpack run yarn run watch:
+
+```bash
+yarn run watch
+```
+
+Open index.html in your browser to watch webpack perform it's magic.
+
+Enjoy! 
 
 ## Deployment
 
