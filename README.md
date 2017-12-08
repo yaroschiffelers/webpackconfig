@@ -64,6 +64,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Tutorial on how to setup your own webpack conif [medium](https://codeburst.io/easy-guide-for-webpack-2-0-from-scratch-fe508a3ce44e)
+* Tutorial on how to setup your own webpack config [medium](https://codeburst.io/easy-guide-for-webpack-2-0-from-scratch-fe508a3ce44e)
 
 
