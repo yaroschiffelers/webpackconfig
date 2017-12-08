@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
+const Etwp = require('extract-text-webpack-plugin')
 
 let config = {
     entry: './src/index.js',
@@ -16,10 +17,16 @@ let config = {
             },
             {
                 test: /\.scss$/,
-                loader: ['style-loader', 'css-loader', 'sass-loader']
+                use: Etwp.extract({
+                    use: ['css-loader', 'sass-loader'],
+                    fallback: 'style-loader'
+                })
             }
         ]
-    }
+    },
+    plugins: [
+        new Etwp('style.css')
+    ]
 }
 
 module.exports = config;
