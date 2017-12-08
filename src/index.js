@@ -11,3 +11,7 @@ class Animal {
 const platypus = new Animal 
 
 platypus.animalType('platypus')
+
+const hippo = new Animal 
+
+hippo.animalType('hippo')

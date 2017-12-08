@@ -22,11 +22,18 @@ let config = {
                     fallback: 'style-loader'
                 })
             }
-        ]
+        ] 
     },
     plugins: [
-        new Etwp('style.css')
-    ]
+        new Etwp('style.css') // Call the extract plugin and name your css file
+    ],
+    devServer: {
+        contentBase: path.resolve(__dirname, './public'), // The directory to serve HTML content from
+        historyApiFallback: true, // Fallback to index.html for SPA's (404's etc)
+        inline: true, // Set to fasle to disable including client scripts (like livereload)
+        open: false // Set to true to open default browser while launching
+    },
+    devtool: 'eval-source-map' // Enable devtools (better debugging)
 }
 
 module.exports = config;
