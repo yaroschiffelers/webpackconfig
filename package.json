@@ -1,0 +1,10 @@
+{
+  "name": "webpackconfig",
+  "version": "0.0.1",
+  "description": "My Personal Webpack Setup",
+  "main": "index.js",
+  "repository": "https://github.com/yaroschiffelers/webpackconfig.git",
+  "author": "Yaro Schiffelers <yaroschiffelers@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
