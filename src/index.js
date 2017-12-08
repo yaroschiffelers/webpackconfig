@@ -12,6 +12,6 @@ const platypus = new Animal
 
 platypus.animalType('platypus')
 
-const hippo = new Animal 
+const hippopotamus = new Animal 
 
-hippo.animalType('hippos')
+hippopotamus.animalType('hippos')
