@@ -7,6 +7,9 @@
   "author": "Yaro Schiffelers <yaroschiffelers@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "watch": "webpack --watch"
+  },
   "devDependencies": {
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
