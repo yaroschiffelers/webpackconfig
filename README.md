@@ -38,13 +38,28 @@ Run Yarn install:
 yarn install
 ```
 
-To start Webpack run yarn run watch:
+### To start Webpack with hot reload:
+
+```bash
+yarn run dev
+```
+
+Open http://localhost:8080/ in your browser to watch webpack perform it's magic.
+
+### To simply let webpack watch your files:
 
 ```bash
 yarn run watch
 ```
+and open index.html in your browser.
 
-Open index.html in your browser to watch webpack perform it's magic.
+### To build your files for production (including uglify Js/CSS)
+
+```bash
+yarn run production
+```
+
+Your production-ready files are in /public 
 
 Enjoy! 
 
