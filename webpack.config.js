@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 let config = {
-    entry: './index.js',
+    entry: './main.js',
     output: {
         filename: 'output.js'
     }
