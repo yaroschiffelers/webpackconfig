@@ -27,7 +27,7 @@ let config = {
     },
     plugins: [
         new ExtractTextWebpackPlugin('style.css'), // Call the extract plugin and name your css file
-        new webpack.optimize.UglifyJsPlugin() // Call the Uglyjs (uglifyjs-webpack) plugin
+        new webpack.optimize.UglifyJsPlugin() // Call the Uglifyjs-webpack-plugin
     ],
     devServer: {
         contentBase: path.resolve(__dirname, './public'), // The directory to serve HTML content from

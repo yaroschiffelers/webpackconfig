@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack",
     "start simple": "webpack --watch",
-    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch"
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "production": "NODE_ENV=production webpack"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
