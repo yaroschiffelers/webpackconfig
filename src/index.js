@@ -1,17 +1,20 @@
+// Just for testing 
+
+/**
+ * Imports our main scss (sass) file
+ */
 require('./assets/scss/style.scss')
 
-document.write('Ombushakalaka, he! ')
 
+/**
+ * Example class
+ */
 class Animal {
+    constructor(type, required) {
+        this.type = type
+        this.required = required
+    }
     animalType(animal) {
         document.write(`I love ${animal} `)
     }
 }
-
-const platypus = new Animal 
-
-platypus.animalType('platypus')
-
-const hippopotamus = new Animal 
-
-hippopotamus.animalType('hippos')
